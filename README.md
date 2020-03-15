@@ -1,4 +1,5 @@
 # ShonDiaz.com
+[![CircleCI](https://circleci.com/gh/Wambosa/shon-diaz.svg?style=svg)](https://circleci.com/gh/Wambosa/shon-diaz)
 
 ## System Requirements
 - ubuntu 18
