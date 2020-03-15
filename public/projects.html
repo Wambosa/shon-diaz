@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Shon Diaz</title>
+
+  <link href="assets/img/crew.png" rel="shortcut icon"/>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/site.css"/>
+  <link rel="stylesheet" type="text/css" media="all" href="css/stars.css"/>
+  <link rel="stylesheet" type="text/css" media="all" href="css/notched-card.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="./js/Chibi.js"></script>
+  <script src="./js/Transporter.js"></script>
+</head>
+
+<body id="body">
+  <nav class="nav nav-pills nav-justified mb-4 thin-nav">
+    <a class="nav-item nav-link p-0 m-1 ml-2 left-button background-dark" href="./index.html">About</a>
+    <a class="nav-item nav-link p-0 m-1 active" href="#">Projects</a>
+    <a class="nav-item nav-link p-0 m-1 mr-2 right-button background-light" target="_blank" href="https://shondiaz.com/assets/data/resume.pdf">Resume</a>
+  </nav>
+
+  <div class="d-flex flex-column align-items-center parallax-stars">
+
+    <div id="stars" class="align-self-start"></div>
+    <div id="stars2" class="align-self-start"></div>
+    <div id="stars3" class="align-self-start"></div>
+
+    <div class="module" role="region">
+      <h2>Regal Arbor</h2>
+      <br />
+      <img src='./assets/project/regal-arbor-fireball.gif'>
+      <br />
+      <p>An epic tale told over pixels, 8 years in the making. 
+        The <a href="https://RegalArbor.com" target="_blank">closed alpha testing site is here</a> and will have public statistics about the build progress of the game.
+        Regal Arbor was originally built in Unity 3D version 2~3 before sprites were supported first class. Logic was written in unityscript, then C# back in those days.
+        Third time is the charm! A more modernized approach with terraform handling IaC (infrastructure as code) gels together the Vue website. 
+        PhaserJs 3 is the current engine with some new advantages and disadvantages. With the main advantage being project orginization and modern vanilla javascript.
+      </p>
+      <br />
+      <span class="shake badge badge-pill badge-light">Terraform</span>
+      <span class="shake badge badge-pill badge-light">CircleCI</span>
+      <span class="shake badge badge-pill badge-light">Github</span>
+      <span class="shake badge badge-pill badge-light">Cloud9</span>
+      <span class="shake badge badge-pill badge-light">VSCode</span>
+      <span class="shake badge badge-pill badge-light">Vue</span>
+      <span class="shake badge badge-pill badge-light">Javascript</span>
+      <span class="shake badge badge-pill badge-light">Phaser 3</span>
+      <span class="shake badge badge-pill badge-light">AWS</span>
+      <span class="shake badge badge-pill badge-light">Cloudfront</span>
+      <span class="shake badge badge-pill badge-light">Cloudwatch</span>
+      <span class="shake badge badge-pill badge-light">Route53</span>
+      <span class="shake badge badge-pill badge-light">S3</span>
+      <span class="shake badge badge-pill badge-light">API Gateway</span>
+      <span class="shake badge badge-pill badge-light">Lambda</span>
+      <span class="shake badge badge-pill badge-light">Firebase</span>
+      <span class="shake badge badge-pill badge-light">Trello</span>
+      <span class="shake badge badge-pill badge-light">Slack</span>
+    </div>
+    <hr align="center" class="above">
+
+
+    <div class="module" role="region">
+        <h2>S.A.T. Score Sends</h2>
+        <br />
+        <img src='./assets/project/sat-scores.png'>
+        <br />
+        <p>
+          Taking the S.A.T.? Sending your perfect results to a prestigious <i>(or not so prestigious)</i> college?
+          Then there is a good chance you will be using this tool and workflow. 
+          A great number of people and talent behind the scenes that made such a tool possible. 
+          Choosing what you want to send to prospective universities <a href="https://collegereadiness.collegeboard.org/sat/scores/sending-scores/score-choice">is easier now with the score sending workflow</a>
+        </p>
+        <br />
+        <span class="shake badge badge-pill badge-light">CloudFormation</span>
+        <span class="shake badge badge-pill badge-light">Jenkins</span>
+        <span class="shake badge badge-pill badge-light">Bitbucket</span>
+        <span class="shake badge badge-pill badge-light">VSCode</span>
+        <span class="shake badge badge-pill badge-light">React</span>
+        <span class="shake badge badge-pill badge-light">Javascript</span>
+        <span class="shake badge badge-pill badge-light">JQuery</span>
+        <span class="shake badge badge-pill badge-light">AWS</span>
+        <span class="shake badge badge-pill badge-light">Dynamo</span>
+        <span class="shake badge badge-pill badge-light">Cloudfront</span>
+        <span class="shake badge badge-pill badge-light">KMS</span>
+        <span class="shake badge badge-pill badge-light">S3</span>
+        <span class="shake badge badge-pill badge-light">Lambda</span>
+        <span class="shake badge badge-pill badge-light">Jira</span>
+        <span class="shake badge badge-pill badge-light">MSTeams</span>
+    </div>
+    <hr align="center" class="above">
+
+    <div class="module" role="region">
+        <h2>Realtime Consumer Opportunity</h2>
+        <br />
+        <img src='./assets/project/rge.gif'>
+        <br />
+        <p>
+          An equity data mining solution.
+          Monitors dms data feeds realtime for participating dealerships then arms sales persons within 15 minutes with customer proximity, 
+          a list of opportunities, and conversation starters that match the profiled personality to boot!
+          The current offering is not public facing, but may become public facing in the near future.
+        </p>
+        <br />
+        <span class="shake badge badge-pill badge-light">Terraform</span>
+        <span class="shake badge badge-pill badge-light">Vue</span>
+        <span class="shake badge badge-pill badge-light">Javascript</span>
+        <span class="shake badge badge-pill badge-light">Python</span>
+        <span class="shake badge badge-pill badge-light">AWS</span>
+        <span class="shake badge badge-pill badge-light">Dynamo</span>
+        <span class="shake badge badge-pill badge-light">Aurora</span>
+        <span class="shake badge badge-pill badge-light">S3</span>
+        <span class="shake badge badge-pill badge-light">SNS</span>
+        <span class="shake badge badge-pill badge-light">SQS</span>
+        <span class="shake badge badge-pill badge-light">Lambda</span>
+        <span class="shake badge badge-pill badge-light">Cloudfront</span>
+        <span class="shake badge badge-pill badge-light">Cloudwatch</span>
+        <span class="shake badge badge-pill badge-light">API Gateway</span>
+        <span class="shake badge badge-pill badge-light">IAM</span>
+        <span class="shake badge badge-pill badge-light">CircleCi</span>
+        <span class="shake badge badge-pill badge-light">Github</span>
+        <span class="shake badge badge-pill badge-light">Cloud9</span>
+        <span class="shake badge badge-pill badge-light">Slack</span>
+    </div>
+    <hr align="center" class="above">
+
+    <div class="module" role="region">
+      <h2>Universal DMS Feed</h2>
+      <br />
+      <img src='./assets/project/universal-dms.gif'>
+      <br />
+      <p>
+        An evolution in how we've handled historical dms data in house. After discovery, data from N unknown sources runs through a series of rules.
+        Failure to meet specification places individual rows to the side. Since we have at least five dms providers with changing schema and some manual entry.
+        This allows alerts to be precise whilst continuing to deliver on the n% good data that always exists in a setting where users hand type information.
+      </p>
+      <br />
+      <span class="shake badge badge-pill badge-light">Terraform</span>
+      <span class="shake badge badge-pill badge-light">Vue</span>
+      <span class="shake badge badge-pill badge-light">Python</span>
+      <span class="shake badge badge-pill badge-light">AWS</span>
+      <span class="shake badge badge-pill badge-light">Dynamo</span>
+      <span class="shake badge badge-pill badge-light">Aurora</span>
+      <span class="shake badge badge-pill badge-light">S3</span>
+      <span class="shake badge badge-pill badge-light">SNS</span>
+      <span class="shake badge badge-pill badge-light">SQS</span>
+      <span class="shake badge badge-pill badge-light">Lambda</span>
+      <span class="shake badge badge-pill badge-light">Cloudfront</span>
+      <span class="shake badge badge-pill badge-light">Cloudwatch</span>
+      <span class="shake badge badge-pill badge-light">API Gateway</span>
+      <span class="shake badge badge-pill badge-light">IAM</span>
+      <span class="shake badge badge-pill badge-light">CircleCi</span>
+      <span class="shake badge badge-pill badge-light">Github</span>
+      <span class="shake badge badge-pill badge-light">Cloud9</span>
+     </div>
+    <hr align="center" class="above">
+
+    <div class="module" role="region">
+      <h2>CDK DMS Feed Integration</h2>
+      <br />
+      <img src='./assets/project/cdk.gif'>
+      <br />
+      <p>
+        Anyone whom has worked with the dms provider cdk knows just how much of a snowflake (unique server) cluster they have in the backend.
+        I stood up a fault tolerant API interface in front of the CDK API so that our data driven products could be reliably powered by current dealership data.
+        Datasets are not prejoined; we have to aqquire auxillary data whilst avoiding race conditions introduced by cdk's server overload and retries.
+        Our service translates the xml structure into a more modern json while abstracting the taxing time sensative join complexities. Finishing touches included a chat bot named <i>CDKen</i>.
+      </p>
+      <br />
+      <span class="shake badge badge-pill badge-light">Terraform</span>
+      <span class="shake badge badge-pill badge-light">ECR</span>
+      <span class="shake badge badge-pill badge-light">Python</span>
+      <span class="shake badge badge-pill badge-light">AWS</span>
+      <span class="shake badge badge-pill badge-light">Dynamo</span>
+      <span class="shake badge badge-pill badge-light">Aurora</span>
+      <span class="shake badge badge-pill badge-light">S3</span>
+      <span class="shake badge badge-pill badge-light">SQS</span>
+      <span class="shake badge badge-pill badge-light">Lambda</span>
+      <span class="shake badge badge-pill badge-light">ECS</span>
+      <span class="shake badge badge-pill badge-light">Cloudwatch</span>
+      <span class="shake badge badge-pill badge-light">API Gateway</span>
+      <span class="shake badge badge-pill badge-light">IAM</span>
+      <span class="shake badge badge-pill badge-light">CircleCi</span>
+      <span class="shake badge badge-pill badge-light">Github</span>
+      <span class="shake badge badge-pill badge-light">Cloud9</span>
+      <span class="shake badge badge-pill badge-light">Javascript</span>
+      <span class="shake badge badge-pill badge-light">Slack</span>
+    </div>
+    <hr align="center" class="above">
+
+
+  </div>
+
+
+
+  <script src="./js/init/projects.js"></script>
+
+</body>
