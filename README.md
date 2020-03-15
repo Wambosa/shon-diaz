@@ -30,14 +30,18 @@ the prod vanity url will be https://shondiaz.com
 
 
 ## Tech debt
-- [ ] stars animation does not traverse very long pages. Near the bottom of the porject page, there are no stars.. Just utter darkness...
+- [ ] stars animation does not traverse very long pages. Near the bottom of the project page, there are no stars.. Just utter darkness...
 - [x] maybe convert to a vue project someday, or just leave this as my only vanilla project.
 - [ ] gif sizes could be decreased by dropping the framerate.
+- [ ] needs aria markup
+- [x] the notched style does not work on safari browsers _(wontfix)_
+- [ ] the nav pills have issues rendering the height on safari
+- [ ] project image color fade in is immediate, but the grayscale animation works?
 - [ ] there are at least a dozen missing projects that are no longer referenced in the new design.
   - [ ] own krillin
-  - [ ] lua love letter
+  - [ ] lua love letter (machine learning)
   - [ ] loan health
-  - [ ] juxstaposition
+  - [ ] juxtaposition (house purchasing comparison)
   - [ ] cyclops
   - [ ] dark solution
   - [ ] db magic
@@ -50,3 +54,10 @@ the prod vanity url will be https://shondiaz.com
   - [ ] time management
   - [ ] secret santa
   - [ ] legacy portfolio
+  - [ ] perishable
+  - [ ] document redact (machine learning)
+  - [ ] fake document scan generation
+  - [ ] recalls of state maryland
+  - [ ] fundamental experience
+  - [ ] soty
+  - [ ] custom card game

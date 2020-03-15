@@ -47,13 +47,6 @@ a:hover {
   border-bottom-right-radius: 3em!important;
 }
 
-.background-lcars {
-  background-image: url(../img/lcars.svg);
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .background-neon {
   background-color: #0088FE!important;
 }
