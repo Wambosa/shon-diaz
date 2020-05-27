@@ -29,7 +29,7 @@ _simply tag a release on this github repo and circleci will pick up the master b
 the prod vanity url will be https://shondiaz.com
 
 
-## Tech debt
+## Future
 - [ ] stars animation does not traverse very long pages. Near the bottom of the project page, there are no stars.. Just utter darkness...
 - [x] maybe convert to a vue project someday, or just leave this as my only vanilla project.
 - [ ] gif sizes could be decreased by dropping the framerate.
@@ -61,3 +61,8 @@ the prod vanity url will be https://shondiaz.com
   - [ ] fundamental experience
   - [ ] soty
   - [ ] custom card game
+  - [ ] data visualization
+  - [ ] mentorship
+  - [ ] ADRs
+  - [ ] vue patterns
+  - [ ] terraform patterns
