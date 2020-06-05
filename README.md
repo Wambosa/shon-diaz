@@ -38,7 +38,7 @@ the prod vanity url will be https://shondiaz.com
 - [ ] the nav pills have issues rendering the height on safari
 - [ ] project image color fade in is immediate, but the grayscale animation works?
 - [ ] there are at least a dozen missing projects that are no longer referenced in the new design.
-  - [ ] own krillin
+  - [x] own krillin
   - [ ] lua love letter (machine learning)
   - [ ] loan health
   - [ ] juxtaposition (house purchasing comparison)
