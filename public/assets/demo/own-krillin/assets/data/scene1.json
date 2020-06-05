@@ -1,0 +1,29 @@
+{
+    "villian": "raditz",
+    
+    "background": {
+        "spriteName" : "scene_earth_water",
+        "xOffset": -1,
+        "yOffset": -5,
+        "scale": {"x": 5, "y": 3}
+    },
+    
+    "music": "todo",
+    
+    "enemies": [
+        {
+            "name": "piccolo",
+            "progress": 0,
+            "isSuprise": false,
+            "difficulty": "easy"
+        }
+    ],
+    
+    "krillinMoves": [
+        "run",
+        "attack",
+        "taiyoken",
+        "kiBlast",
+        "destructoDisk"
+    ]
+}
