@@ -44,12 +44,13 @@ resource "aws_cloudfront_distribution" "shon_diaz" {
     min_ttl                = 0
     default_ttl            = 60
     max_ttl                = 600
+    compress               = true
   }
 
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations        = ["US", "CA"]
+      restriction_type = "none"
+      locations        = [ ]
     }
   }
 
