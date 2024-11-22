@@ -1,4 +1,4 @@
-.PHONY: install lint build deploy push_assets fetch_assets circleci clean terraform
+.PHONY: install lint build deploy push_assets fetch_assets prepareci clean terraform
 
 # example: make build TARGET=website ENV=lab
 # ENV := lab, prod
@@ -39,19 +39,25 @@ push_assets:
 	--exclude "*" \
 	--include "*.png" \
 	--include "*.jpg" \
+	--include "*.jpeg" \
 	--include "*.gif" \
 	--include "*.pdf" \
+	--include "*.mp3" \
+	--include "*.mp4" \
 
 fetch_assets:
 	@mkdir -p ./public/assets/ \
-	&& find public/assets/ -type f -iname \*.jpg -delete \
-	&& find public/assets/ -type f -iname \*.gif -delete \
 	&& find public/assets/ -type f -iname \*.png -delete \
+	&& find public/assets/ -type f -iname \*.jpg -delete \
+	&& find public/assets/ -type f -iname \*.jpeg -delete \
+	&& find public/assets/ -type f -iname \*.gif -delete \
 	&& find public/assets/ -type f -iname \*.pdf -delete \
+	&& find public/assets/ -type f -iname \*.mp3 -delete \
+	&& find public/assets/ -type f -iname \*.mp4 -delete \
 	&& . ./config/secrets-${ENV}.env \
 	&& aws s3 cp s3://shon-diaz-assets-${ENV}/ public/assets/ --recursive 
 
-circleci:
+prepareci:
 	@mkdir -p  ./config/ \
 	&& touch ./config/secrets-${ENV}.env \
 	&& sudo chmod -R 777 /usr/local/share \

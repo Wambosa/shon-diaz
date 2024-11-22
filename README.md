@@ -1,32 +1,21 @@
 # ShonDiaz.com
-[![CircleCI](https://circleci.com/gh/Wambosa/shon-diaz.svg?style=svg)](https://circleci.com/gh/Wambosa/shon-diaz)
+_I got pretty lucky and snagged the domain for my name. Annoyed that other people have my nam, but what else can I do except take the coveted .com top level domain?_
+
 
 ## System Requirements
 - ubuntu 18
 - awscli
-- terraform 12.20
-
-## Why Vanilla JS?
-When I first learned how to build websites, there were no fancy frameworks to do it.
-They were built with html, css, and javascript. 
-This simple and plain approach brings a little joy when considering the ole days.
+- terraform `0.12.20`
 
 
-## Deploying to a test s3 bucket
-_deploy to a s3 bucket owned by a different aws account with the following command_
+## Why Svelte?
+Originally, this site was vanillaJS; the original web "framework". The past couple of years, I've come to love svelte and have used it to build 5 projects of varying complexity and production use. Svelte is battle hardened AND it is the closest thing to the old school web dev experience I prefer. It makes me enjoy working on the frontend codebases! React is popular and has a larger community, but I dislike the direction they have choosen to take the framework in. Even though I use react professionally in other places, given a choice, it would always be svelte.
 
-```
-make install
-make build deploy TARGET=website ENV=lab
-```
 
-you can then visit https://lab.shondiaz.com  
-note: cache may retain old changes for _60-600_ seconds
+## Deploy as static site _(s3 bucket)_
+_simply tag a release on this github repo; master branch will be built, then dist code pushed to the prod bucket_
 
-## Deploy to the real s3 bucket
-_simply tag a release on this github repo and circleci will pick up the master branch and deploy the built dist code to the prod bucket_
-
-the prod vanity url will be https://shondiaz.com
+the prod vanity url will be `https://shondiaz.com`
 
 
 ## Future
