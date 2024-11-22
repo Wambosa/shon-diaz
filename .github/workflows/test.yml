@@ -30,8 +30,8 @@ jobs:
     - name: Sanity Check Route53
       run: make build TARGET=route53
 
-    - name: Sanity Check Webpage
-      run: make build TARGET=webpage
+    - name: Sanity Check Website
+      run: make build TARGET=website
 
     - name: Lint
       run: make lint

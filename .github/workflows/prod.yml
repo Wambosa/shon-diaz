@@ -39,5 +39,5 @@ jobs:
     - name: Fetch Big Ole Assets
       run: make fetch_assets
 
-    - name: Sanity Check Webpage
-      run: make build deploy TARGET=webpage
+    - name: Sanity Check Website
+      run: make build deploy TARGET=webite
