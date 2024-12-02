@@ -39,3 +39,5 @@ node_modules
 *.tfstate.backup
 .terraform.tfstate.lock.info
 .terraform/
+
+public/assets/demo/analytics/
