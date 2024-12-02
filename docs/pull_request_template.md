@@ -2,13 +2,12 @@
 _subheading_
 
 ### work list
-
 - [ ] example task undone
 - [x] example task done 
   - [ ] subtask
-  - [x] [subtask with link to additional details][aws labs]
+  - [ ] subtask
 
 
 ----------
 
-[aws labs]: http://shondiaz.com
+[aws prod]: http://shondiaz.com

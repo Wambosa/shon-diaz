@@ -25,6 +25,10 @@ a:hover {
   text-decoration: none;
 }
 
+div.card.border.border-trek {
+  border-color: #0088FE!important;
+}
+
 .above {
   z-index: 10;
 }

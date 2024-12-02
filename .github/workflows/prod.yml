@@ -1,0 +1,43 @@
+name: deploy-prod
+
+on:
+  release:
+    types: [published]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  deploy-prod:
+
+    env:
+      ENV: prod
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: us-east-1
+      AUTO_APPROVE: -auto-approve
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: chrislennon/action-aws-cli@v1.1
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+    - name: Shim
+      run: make prepareci
+
+    - name: Sanity Check Storage
+      run: make build deploy TARGET=storage
+
+    - name: Sanity Check Route53
+      run: make build deploy TARGET=route53
+
+    - name: Fetch Big Ole Assets
+      run: make fetch_assets
+
+    - name: Sanity Check Website
+      run: make build deploy TARGET=website
