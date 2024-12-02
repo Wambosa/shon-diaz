@@ -66,13 +66,13 @@ img:hover {
 }
 
 @media screen and (max-width: 520px) {
-  module {
-    max-width: 75vw;
+  .module {
+    max-width: 85vw;
   }
 }
 
 @media screen and (max-width: 400px) {
-  module {
-    max-width: 85vw;
+  .module {
+    max-width: 95vw;
   }
 }
