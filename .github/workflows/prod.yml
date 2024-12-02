@@ -40,4 +40,4 @@ jobs:
       run: make fetch_assets
 
     - name: Sanity Check Website
-      run: make build deploy TARGET=webite
+      run: make build deploy TARGET=website
